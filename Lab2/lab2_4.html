@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>YouTube и Яндекс.Карты</title>
+        <style>
+            .tag
+            {
+                color: navy;
+            }
+            .attribute
+            {
+                color: #e6550d;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Добавление встроенных фреймов</h1>
+        <p>Один из способов добавления содержимого на страницу — это внедрить другую HTML-страницу в текущую. 
+            Это делается с помощью встроенного фрейма или элемента &lt;span class="tag"&gt;&lt;iframe&gt;&lt;/span&gt;. 
+            Данный элемент принимает URL другой HTML-страницы в значении атрибута &lt;span class="attribute"&gt;src&lt;/span&gt;&nbsp;— это вызывает содержимое из внедрённой HTML-страницы для отображения на текущей странице. 
+            Значение атрибута &lt;span class="attribute"&gt;src&lt;/span&gt; может быть URL относительно страницы, где появляется элемент &lt;span class="tag"&gt;&lt;iframe&gt;&lt;/span&gt; или абсолютным адресом для исключительно внешней страницы.
+        </p>
+        <p>Многие страницы используют элемент &lt;span class="tag"&gt;&lt;iframe&gt;&lt;/span&gt; для внедрения медиа-контента на страницу с внешнего сайта, вроде Google Maps, YouTube и др.</p>
+
+        <h2>Демонстрация добавления встроенного фрейма</h2>
+        <figure>
+            <figcaption>Физико-математический факультет</figcaption>
+            <iframe 
+                width="560" height="315" src="https://www.youtube.com/embed/t6NIAlyQ15k?si=8grlOUKfK6V5KM0u" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </figure>
+        <figure>
+            <figcaption>Орловский государственный университет имени И. С. Тургенева</figcaption>
+            <iframe 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13596.39563862341!2d36.06751639525924!3d52.95695346994088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41321a7be87401e3%3A0xfe55c2268fc2e241!2z0J7RgNC70L7QstGB0LrQuNC5INCT0L7RgdGD0LTQsNGA0YHRgtCy0LXQvdC90YvQuSDQo9C90LjQstC10YDRgdC40YLQtdGCINC40LzQtdC90Lgg0Jgu0KEuINCi0YPRgNCz0LXQvdC10LLQsA!5e0!3m2!1sru!2sru!4v1709917733468!5m2!1sru!2sru">
+            </iframe>
+        </figure>
+    </body>
+</html>
