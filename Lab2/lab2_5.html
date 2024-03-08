@@ -17,8 +17,10 @@
                 </tr>
                 <tr>
                     <td><label>Пол</label></td>
-                    <td><input type="radio" name="Gender" id="Gender_Male" value="Male">Мужской</td>
-                    <td><input type="radio" name="Gender" id="Gender_Female" value="Female">Женский</td>
+                    <td>
+                        <input type="radio" name="Gender" id="Gender_Male" value="Male">Мужской
+                        <input type="radio" name="Gender" id="Gender_Female" value="Female">Женский
+                    </td>
                 </tr>
                 <tr>
                     <td><label>Дата рождения</label></td>
@@ -26,11 +28,21 @@
                 </tr>
                 <tr>
                     <td><label>Я знаю</label></td>
-                    <td><input type="checkbox" name="Language" value="Russian">Русский</td>
-                    <td><input type="checkbox" name="Language" value="English">Английский</td>
-                    <td><input type="checkbox" name="Language" value="Deutsch">Немецкий</td>
-                    <td><input type="checkbox" name="Language" value="Spanish">Испанский</td>
-                    <td><input type="checkbox" name="Language" value="Chinese">Китайский</td>
+                    <td>
+                        <input type="checkbox" name="Language" id="Language_Russian" value="Russian">Русский
+                        <input type="checkbox" name="Language" id="Language_English" value="English">Английский
+                        <input type="checkbox" name="Language" id="Language_Deutsch" value="Deutsch">Немецкий
+                        <input type="checkbox" name="Language" id="Language_Spanish" value="Spanish">Испанский
+                        <input type="checkbox" name="Language" id="Language_Chinese" value="Chinese">Китайский
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Обо мне</label></td>
+                    <td><input type="text" id="About_me" placeholder="Напишите коротко о себе"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
                 </tr>
             </table>
         </form>
