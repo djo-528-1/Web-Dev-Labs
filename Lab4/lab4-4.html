@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Оформление вертикального меню 2</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <style>
             html
             {
@@ -16,12 +18,16 @@
             }
             .menu ul
             {
-                list-style-image: url(Icons/minus.gif);
+                list-style-type: none;
                 padding-left: 35px;
                 padding-top: 10px;
             }
-            .menu li
+            .menu li::before
             {
+                content: "\f196";
+                font-family: FontAwesome;
+                position: absolute;
+                left: 15px;
                 padding-left: 5px;
             }
             .menu li a
@@ -38,9 +44,12 @@
                 padding-top: 5px;
                 padding-left: 15px;
             }
-            .menu li li
+            .menu li li::before
             {
-                list-style-image: url(Icons/point.gif);
+                content: "\f192";
+                font-family: FontAwesome;
+                position: absolute;
+                left: 30px;
             }
         </style>
     </head>
