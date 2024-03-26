@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Оформление вертикального меню 2</title>
+        <style>
+            html
+            {
+                background: #f0f0f0;
+            }
+            .menu
+            {
+                width: 200px;
+                height: 500px;
+                background: #fff;
+            }
+            .menu ul
+            {
+                list-style-image: url(Icons/plus.gif);
+                padding-left: 35px;
+                padding-top: 10px;
+            }
+            .menu li
+            {
+                padding-left: 5px;
+            }
+            .menu li a
+            {
+                color: rgb(51,102,153);
+            }
+            .menu li a:hover
+            {
+                color:deepskyblue;
+            }
+            .menu li ul
+            {
+                display: none;
+                padding-top: 5px;
+                padding-left: 15px;
+            }
+            .menu li li
+            {
+                list-style-image: url(Icons/point.gif);
+            }
+            .menu li:hover ul
+            {
+                display: block;
+            }
+            .menu li:hover
+            {
+                list-style-image: url(Icons/minus.gif);
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Фильмы</a>
+                    <div class="Films">
+                        <ul>
+                            <li><a href="#">Экшн</a></li>
+                            <li><a href="#">Мелодрамы</a></li>
+                            <li><a href="#">Сериалы</a></li>
+                            <li><a href="#">Семейные</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Музыка</a>
+                    <div class="Musics">
+                        <ul>
+                            <li><a href="#">Классика</a></li>
+                            <li><a href="#">Джаз</a></li>
+                            <li><a href="#">Рок</a></li>
+                            <li><a href="#">Грандж</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Софт</a>
+                    <div class="Softs">
+                        <ul>
+                            <li><a href="#">Графика</a></li>
+                            <li><a href="#">3D-моделирование</a></li>
+                            <li><a href="#">Машинопись</a></li>
+                            <li><a href="#">Переводчики</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Игры</a>
+                    <div class="Games">
+                        <ul>
+                            <li><a href="#">РПГ</a></li>
+                            <li><a href="#">Шутеры</a></li>
+                            <li><a href="#">Пасьянсы</a></li>
+                            <li><a href="#">Стратегии</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
