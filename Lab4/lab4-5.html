@@ -16,7 +16,7 @@
             }
             .menu ul
             {
-                list-style-image: url(Icons/minus.gif);
+                list-style-image: url(Icons/plus.gif);
                 padding-left: 35px;
                 padding-top: 10px;
             }
@@ -26,27 +26,29 @@
             }
             .menu li a
             {
-                display: block;
                 color: rgb(51,102,153);
             }
             .menu li a:hover
             {
-                display: block;
                 color:deepskyblue;
             }
             .menu li ul
             {
+                display: none;
                 padding-top: 5px;
                 padding-left: 15px;
             }
             .menu li li
             {
-                display: none;
+                list-style-image: url(Icons/point.gif);
             }
-            .menu li:hover li
+            .menu li:hover ul
             {
                 display: block;
-                list-style-image: url(Icons/point.gif);
+            }
+            .menu li:hover
+            {
+                list-style-image: url(Icons/minus.gif);
             }
         </style>
     </head>
@@ -54,36 +56,44 @@
         <nav class="menu">
             <ul>
                 <li><a href="#">Фильмы</a>
-                    <ul>
-                        <li><a href="#">Экшн</a></li>
-                        <li><a href="#">Мелодрамы</a></li>
-                        <li><a href="#">Сериалы</a></li>
-                        <li><a href="#">Семейные</a></li>
-                    </ul>
+                    <div class="Films">
+                        <ul>
+                            <li><a href="#">Экшн</a></li>
+                            <li><a href="#">Мелодрамы</a></li>
+                            <li><a href="#">Сериалы</a></li>
+                            <li><a href="#">Семейные</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="#">Музыка</a>
-                    <ul>
-                        <li><a href="#">Классика</a></li>
-                        <li><a href="#">Джаз</a></li>
-                        <li><a href="#">Рок</a></li>
-                        <li><a href="#">Грандж</a></li>
-                    </ul>
+                    <div class="Musics">
+                        <ul>
+                            <li><a href="#">Классика</a></li>
+                            <li><a href="#">Джаз</a></li>
+                            <li><a href="#">Рок</a></li>
+                            <li><a href="#">Грандж</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="#">Софт</a>
-                    <ul>
-                        <li><a href="#">Графика</a></li>
-                        <li><a href="#">3D-моделирование</a></li>
-                        <li><a href="#">Машинопись</a></li>
-                        <li><a href="#">Переводчики</a></li>
-                    </ul>
+                    <div class="Softs">
+                        <ul>
+                            <li><a href="#">Графика</a></li>
+                            <li><a href="#">3D-моделирование</a></li>
+                            <li><a href="#">Машинопись</a></li>
+                            <li><a href="#">Переводчики</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li><a href="#">Игры</a>
-                    <ul>
-                        <li><a href="#">РПГ</a></li>
-                        <li><a href="#">Шутеры</a></li>
-                        <li><a href="#">Пасьянсы</a></li>
-                        <li><a href="#">Стратегии</a></li>
-                    </ul>
+                    <div class="Games">
+                        <ul>
+                            <li><a href="#">РПГ</a></li>
+                            <li><a href="#">Шутеры</a></li>
+                            <li><a href="#">Пасьянсы</a></li>
+                            <li><a href="#">Стратегии</a></li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </nav>
