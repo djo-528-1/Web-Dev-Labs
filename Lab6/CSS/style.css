@@ -1,0 +1,63 @@
+body
+{
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    font-style: normal;
+      
+}
+.header
+{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+.menu
+{
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo-svg
+{
+    display: block;
+    width: 58px;
+    height: 58px;
+    margin-right: 25px;
+    background-image: url(/Lab6/Imagine/mamon-logo.svg);
+}
+.logo-txt
+{
+    font-size: 24px;
+    color: #202020;
+}
+.menu>li>a
+{
+    font-size: 14px;
+    color: #202020;
+    text-decoration: none;
+}
+.menu-button
+{
+    color: #FFFFFF;
+    background-color: #5528FF;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+}
