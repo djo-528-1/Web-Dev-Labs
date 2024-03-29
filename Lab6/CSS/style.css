@@ -117,6 +117,7 @@ body
 }
 .services
 {
+    padding-top: 100px;
     padding-left: 50px;
     padding-right: 50px;
     border-top: 1px solid #C2C2C2;
@@ -124,7 +125,7 @@ body
 .grid-services
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template: repeat(2, 1fr) / 50% 50%;
     grid-row-gap: 38px;
 }
 .grid-services h3
@@ -146,12 +147,12 @@ body
     justify-content: flex-start;
     align-items: center;
 }
-.mobile img
+.mobile-img
 {
     flex-basis: 165px;
     text-align: center;
 }
-.mobile h3 p
+.mobile-text
 {
     flex-basis: calc(80% - 165px);
 }
@@ -161,12 +162,12 @@ body
     justify-content: flex-start;
     align-items: center;
 }
-.web img
+.web-img
 {
     flex-basis: 165px;
     text-align: center;
 }
-.web h3 p
+.web-text
 {
     flex-basis: calc(80% - 165px);
 }
@@ -176,12 +177,12 @@ body
     justify-content: flex-start;
     align-items: center;
 }
-.design img
+.design-img
 {
     flex-basis: 165px;
     text-align: center;
 }
-.design h3 p
+.design-text
 {
     flex-basis: calc(80% - 165px);
 }
@@ -191,12 +192,12 @@ body
     justify-content: flex-start;
     align-items: center;
 }
-.qa img
+.qa-img
 {
     flex-basis: 165px;
     text-align: center;
 }
-.qa h3 p
+.qa-text
 {
     flex-basis: calc(80% - 165px);
 }
