@@ -2,7 +2,6 @@ body
 {
     font-family: "Ubuntu", Helvetica, Arial, sans-serif;
     font-style: normal;
-      
 }
 .header
 {
@@ -62,14 +61,142 @@ body
     font-weight: 700;
 }
 
-.content
-{
-    padding-top: 125px;
-    padding-bottom: 50px;
-}
-.services
+.subsection
 {
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+}
+.subsection h2
+{
+    position: absolute;
+    top: 25px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 5px 15px;
+    color: #C2C2C2;
+}
+.wrap
+{
+    width: 100%;
+    max-width: 1212px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.content
+{
+    padding-top: 75px
+}
+.content h1
+{
+    font-size: 58px;
+    color: #202020;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.4em;
+}
+.content p
+{
+    font-size: 32px;
+    line-height: 1.6;
+    color: #4F4F4F;
+    max-width: 746px;
+    margin-bottom: 2em;
+}
+.content-button
+{
+    background-color: #5528FF;
+    border-radius: 10px;
+    padding: 16px 59px;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+}
+.services
+{
+    padding-left: 50px;
+    padding-right: 50px;
     border-top: 1px solid #C2C2C2;
+}
+.grid-services
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 38px;
+}
+.grid-services h3
+{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+.grid-services p
+{
+    font-size: 14px;
+    color: #B2B2B2;
+    line-height: 1.5;
+}
+.mobile
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mobile img
+{
+    flex-basis: 165px;
+    text-align: center;
+}
+.mobile h3 p
+{
+    flex-basis: calc(80% - 165px);
+}
+.web
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.web img
+{
+    flex-basis: 165px;
+    text-align: center;
+}
+.web h3 p
+{
+    flex-basis: calc(80% - 165px);
+}
+.design
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.design img
+{
+    flex-basis: 165px;
+    text-align: center;
+}
+.design h3 p
+{
+    flex-basis: calc(80% - 165px);
+}
+.qa
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.qa img
+{
+    flex-basis: 165px;
+    text-align: center;
+}
+.qa h3 p
+{
+    flex-basis: calc(80% - 165px);
 }
