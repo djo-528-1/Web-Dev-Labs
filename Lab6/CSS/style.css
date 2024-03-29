@@ -201,3 +201,19 @@ body
 {
     flex-basis: calc(80% - 165px);
 }
+
+.clients
+{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top: 1px solid #C2C2C2;
+}
+.grid-clients
+{
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-row-gap: 44px;
+    padding-top: 0;
+}
