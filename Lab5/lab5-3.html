@@ -4,26 +4,34 @@
         <meta charset="UTF-8">
         <title>Использование float при построении колонок</title>
         <style type="text/css">
+            body
+            {
+                font-size: 0px;
+            }
+            #left, #center, #right
+            {
+                display: inline-block;
+                box-sizing: border-box;
+                vertical-align: top;
+            }
             #left
             {
                 background: #ccf;
+                font-size: 14px;
                 width: 200px;
-                box-sizing: border-box;
-                display: inline-block;
+                
             }
             #right
             {
                 background: #fcc;
+                font-size: 14px;
                 width: 200px;
-                box-sizing: border-box;
-                display: inline-block;
             }
             #center
             {
                 background: #cfc;
-                box-sizing: border-box;
+                font-size: 14px;
                 width: 600px;
-                display: inline-block;
             }
         </style>
     </head>
