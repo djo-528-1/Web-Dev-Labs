@@ -39,7 +39,7 @@ body
     width: 58px;
     height: 58px;
     margin-right: 25px;
-    background-image: url(/Lab6/Imagine/mamon-logo.svg);
+    background-image: url(../Imagine/mamon-logo.svg);
 }
 .logo-txt
 {
