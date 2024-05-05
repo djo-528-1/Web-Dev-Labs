@@ -8,6 +8,7 @@ while (exit_flag)
     if (num > 100 || num === null)
     {
         exit_flag = 0;
+        alert("Выход найден, можешь взять печеньку ;D");
     }
     else
     {
