@@ -48,15 +48,40 @@ function factorial(x)
 
 function fib (x)
 {
-    let x1 = 0, x2 = 1, result = 0;
-    let BigInt_x = BigInt(x);
-    if (x >=2)
-        for (let i = 0; i < x; i++)
-        {
-            result = x1 + x2;
-            x1 = x2;
-            x2++;
-        }
+    let x1 = 0n, x2 = 1n;
+    if (x === 0)
+        return 0n;
+    else if (x === 1)
+        return 1n;
     else
-        return x;
+    {
+        for (let i = 1; i < x; i++)
+        {
+            let result = x1 + x2;
+            x1 = x2;
+            x2 = result;
+        }
+        return x2;
+    }
+}
+
+function compare (x)
+{
+    return function (y)
+    {
+        if (y > x)
+            return true;
+        else if (y < x)
+            return false;
+        else
+            return null;
+    }
+}
+
+function sum(...numbers)
+{
+    let result = 0;
+    for (let i = 0; i < numbers.length; i++)
+        result += numbers[i];
+    return result;
 }
