@@ -1,3 +1,4 @@
+import { fib } from "./lab2.js";
 export function getDecimal(num)
 {
     if (num>0)
@@ -57,4 +58,25 @@ export function camelize(str)
         editstr = editstr.charAt(0).toUpperCase() + editstr.slice(1);
         return outstr + editstr;
     }
+}
+
+export function fibs (number)
+{
+    let arrfib = [];
+    for (let i = 0; i < number; i++)
+        arrfib.push(fib(i));
+    return arrfib;
+}
+
+export function arrReverseSorted(arr)
+{
+    let arr_reverse = arr.toSorted();
+    arr_reverse.reverse();
+    return arr_reverse;
+}
+
+export function unique(arr)
+{
+    let unique_arr = new Set(arr);
+    return Array.from(unique_arr);
 }
