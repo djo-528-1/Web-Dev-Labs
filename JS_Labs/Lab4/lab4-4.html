@@ -7,36 +7,30 @@
     <body>
         <script>
             "use strict"
-            let object = {
-                className: 'open menu'
+            let book1 = new Object();
+            book1.title = "ABC";
+            book1.pubYear = 2020;
+            book1.price = 893;
+            
+            let book2 = {
+                title:  "f", 
+                pubYear: 2000,
+                price: 10,
             };
-            console.log("Изначальный объект:\n", object);
 
-            object.addClass = function (cls)
+            let empty_book = {};
+
+            function  isEmpty(obj)
             {
-                if (!this.className.includes(cls))
-                    this.className += ' ' + cls;
-                else
-                    console.log(cls, " данный класс уже существует");
-                return this;
+                for (let key in obj)
+                {
+                    return console.log("false");
+                }
+                return console.log("true");
             }
-
-            object.removeClass = function (cls)
-            {
-                let arr_className = this.className.split(' ');
-                let pos = arr_className.indexOf(cls);
-                arr_className.splice(pos, 1);
-                this.className = arr_className.join(' ');
-                return this;
-            }
-
-            object.addClass("world");
-            object.addClass("navigator");
-            console.log("Объект после добавления классов:\n", object);
-
-            object.removeClass("open");
-            object.removeClass("world");
-            console.log("Объект после удаления классов:\n", object);
+            isEmpty(book1);
+            isEmpty(book2);
+            isEmpty(empty_book);
         </script>
     </body>
 </html>

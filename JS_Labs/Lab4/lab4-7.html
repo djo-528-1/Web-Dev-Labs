@@ -2,11 +2,19 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Задание </title>
+        <title>Задание 7</title>
     </head>
     <body>
         <script>
             "use strict"
+            let now = new Date();
+            console.log(now);
+
+            let h = now.getHours();
+            let m = now.getMinutes();
+            let s = now.getSeconds();
+            s += (h * 3600) + (m * 60);
+            console.log(s);
         </script>
     </body>
 </html>
