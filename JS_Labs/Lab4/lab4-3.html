@@ -7,7 +7,29 @@
     <body>
         <script>
             "use strict"
-            
+            class Book
+            {
+                constructor(title, pubYear, price)
+                {
+                    this.title = title;
+                    this.pubYear = pubYear;
+                    this.price = price;
+                }
+                static compare (book1, book2)
+                {
+                    return book1.pubYear - book2.pubYear;
+                }
+            }
+
+            let books = [
+                new Book ("1984", 1949, 259),
+                new Book ("Икона DOOM", 2024, 1059),
+                new Book ("The Sheep Look Up", 1972, 714)
+            ];
+            console.log("Массив после создания: ", books);
+
+            books.sort(Book.compare);
+            console.log("Массив после сортировки: ", books);
         </script>
     </body>
 </html>
