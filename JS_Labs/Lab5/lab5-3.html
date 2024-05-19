@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Задание 3</title>
-    </head>
-    <body>
-        <script>
-            "use strict"
-        </script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 3</title>
+</head>
+
+<body>
+    <ul>
+        <li>Животные
+            <ul>
+                <li>Млекопитающие
+                    <ul>
+                        <li>Коровы</li>
+                        <li>Ослы</li>
+                        <li>Собаки</li>
+                        <li>Тигры</li>
+                    </ul>
+                </li>
+
+                <li>Другие
+                    <ul>
+                        <li>Змеи</li>
+                        <li>Птицы</li>
+                        <li>Ящерицы</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li>Рыбы
+            <ul>
+                <li>Аквариумные
+                    <ul>
+                        <li>Гуппи</li>
+                        <li>Скалярии</li>
+                    </ul>
+                </li>
+
+                <li>Морские
+                    <ul>
+                        <li>Морская форель</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        "use strict"
+        const li_elements = document.querySelectorAll("li");
+        for (let elem of li_elements)
+        {
+            let first = elem.firstChild;
+            let count_sub_element = elem.querySelectorAll("li").length;
+            console.log("Содержимое элемента: ", first.textContent, "\nКол-во потомков этого элемента: ", count_sub_element);
+        }
+    </script>
+</body>
+
 </html>
