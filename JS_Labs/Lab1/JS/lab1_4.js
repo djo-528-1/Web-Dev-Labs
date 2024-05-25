@@ -1,3 +1,4 @@
+'use strict';
 let num;
 let flag;
 let arr_num=[];

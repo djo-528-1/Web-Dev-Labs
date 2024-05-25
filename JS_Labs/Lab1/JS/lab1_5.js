@@ -1,3 +1,4 @@
+'use strict';
 let num;
 let cat = 2, dog = 3, difference; 
 num = prompt ("Введите число строк");

@@ -1,3 +1,10 @@
+'use strict';
+
+/**
+ * Число Фибоначчи
+ * @param {number} x Число, для которого найдется число Фибоначчи
+ * @returns n-е число Фибоначчи
+ */
 export function fib (x)
 {
     let x1 = 0n, x2 = 1n;

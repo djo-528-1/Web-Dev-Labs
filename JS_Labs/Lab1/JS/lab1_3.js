@@ -1,3 +1,4 @@
+'use strict';
 let num;
 let exit_flag = 1
 

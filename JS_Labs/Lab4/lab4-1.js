@@ -1,3 +1,4 @@
+'use strict';
 let book1 = new Object();
 book1.title = "ABC";
 book1.pubYear = 2020;
