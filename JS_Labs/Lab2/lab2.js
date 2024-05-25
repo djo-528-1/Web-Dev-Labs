@@ -1,3 +1,10 @@
+"use strict"
+/**
+ * Степень
+ * @param {number} x Число, которое возводят в степень
+ * @param {number} n Степень
+ * @returns x возведённое в степень n
+ */
 function pow(x, n)
 {
     let result = 1;
@@ -18,6 +25,11 @@ function pow(x, n)
     return result;
 }
 
+/**
+ * Вычисляет сумму чисел от 1 до n
+ * @param {number} n До какого числа считать сумму
+ * @returns Сумма чисел от 1 до n
+ */
 function sumTo(n)
 {
     let result = 0;
@@ -28,6 +40,11 @@ function sumTo(n)
     return result;
 }
 
+/**
+ * Проверяет год на високосность
+ * @param {number} year Год, который проверяем
+ * @returns bool значение високосный ли год
+ */
 function isLeapYear(year)
 {
     if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0)
@@ -36,6 +53,11 @@ function isLeapYear(year)
         return false;
 }
 
+/**
+ * Факториал
+ * @param {number} x Число, факториал которого надо найти
+ * @returns Факториал числа x
+ */
 function factorial(x)
 {
     let result = 1n;
@@ -46,6 +68,11 @@ function factorial(x)
         return BigInt_x * factorial(x-1);
 }
 
+/**
+ * Число Фибоначчи
+ * @param {number} x Число, для которого найдется число Фибоначчи
+ * @returns n-е число Фибоначчи
+ */
 function fib (x)
 {
     let x1 = 0n, x2 = 1n;
@@ -65,6 +92,12 @@ function fib (x)
     }
 }
 
+/**
+ * Сравнение 2-х чисел и вывод bool
+ * @param {number} x 1-е число
+ * @param {number} y 2-е число
+ * @returns true если y > x; false если y < x; null если y = x
+ */
 function compare (x)
 {
     return function (y)
@@ -78,6 +111,11 @@ function compare (x)
     }
 }
 
+/**
+ * Сумма всех элементов
+ * @param  {...number} numbers Число/числа для сложения
+ * @returns Сумма всех чисел
+ */
 function sum(...numbers)
 {
     let result = 0;

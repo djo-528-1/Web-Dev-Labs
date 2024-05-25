@@ -7,31 +7,31 @@ gender = prompt("Введите свой пол (м/ж)");
 
 function check_input()
 {
-    if (age < 18)
+    if (age > 0 && age < 18)
     {
         return "Вам работать ещё рано — учитесь";
     }
-    else if (gender === "м" && age < 60)
+    else if (gender === "м" && age < 60 && age > 0)
     {
         return "Вам ещё работать и работать";
     }
-    else if (gender === "ж" && age < 55)
+    else if (gender === "ж" && age < 55 && age > 0)
     {
         return "Вам ещё работать и работать";
     }
-    else if (gender === "м" && age < 65)
+    else if (gender === "м" && age < 65 && age > 0)
     {
         return "Скоро пенсия!";
     }
-    else if (gender === "ж" && age <60)
+    else if (gender === "ж" && age <60 && age > 0)
     {
         return "Скоро пенсия!"
     }
-    else if (gender === "м" && age > 64)
+    else if (gender === "м" && age > 64 && age > 0)
     {
         return "Вам пора на пенсию";
     }
-    else if (gender === "ж" && age > 59)
+    else if (gender === "ж" && age > 59 && age > 0)
     {
         return "Вам пора на пенсию";
     }

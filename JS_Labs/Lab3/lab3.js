@@ -1,4 +1,10 @@
 import { fib } from "./lab2.js";
+
+/**
+ * Дробная часть числа
+ * @param {number} num Число, от которого найдём дробную часть
+ * @returns Дробная часть
+ */
 export function getDecimal(num)
 {
     if (num>0)
@@ -7,6 +13,11 @@ export function getDecimal(num)
         return Math.abs((Math.floor(num) - num));
 }
 
+/**
+ * Нормализация адреса сайта
+ * @param {string} url Адрес сайта
+ * @returns Нормализованный адрес
+ */
 export function normalizeUrl(url)
 {
     if (url.includes("https://"))
@@ -17,6 +28,11 @@ export function normalizeUrl(url)
         return `https://${url}`;
 }
 
+/**
+ * Проверка строки на спам
+ * @param {string} string Проверяемая строка
+ * @returns true если есть 'viagra' или 'XXX'; false если их нет
+ */
 export function checkSpam(string)
 {
     if (string.toLowerCase().includes("xxx") || string.toLowerCase().includes("viagra"))
@@ -25,6 +41,12 @@ export function checkSpam(string)
         return false; 
 }
 
+/**
+ * Проверяет длину строки, если больше максимальной длины, обрезаем, иначе оставляем без изменений
+ * @param {string} string Проверяемая строка
+ * @param {number} maxlenght Максимально допустимая длина для строки 
+ * @returns Изначальная или обрезанная строка
+ */
 export function truncate(string, maxlenght)
 {
     if (string.length > maxlenght)
@@ -33,6 +55,11 @@ export function truncate(string, maxlenght)
         return string;
 }
 
+/**
+ * Удаляет в строке дефисы (-), и после них заменяет первую букву на заглавную
+ * @param {string} str Строка, которую нужно преобразовать
+ * @returns Преобразованная строка
+ */
 export function camelize(str)
 {
     let pos, pos2;
@@ -60,6 +87,11 @@ export function camelize(str)
     }
 }
 
+/**
+ * Возращает числа Фибоначчи до введённого числа
+ * @param {number} number Число, до которого найдутся числа Фибоначчи
+ * @returns Массив, заполненный числами Фибоначчи
+ */
 export function fibs (number)
 {
     let arrfib = [];
@@ -68,13 +100,22 @@ export function fibs (number)
     return arrfib;
 }
 
+/**
+ * Сортирует массив в обратном порядке
+ * @param {Array} arr Массив, который сортируем
+ * @returns Масссив в обратном порядке
+ */
 export function arrReverseSorted(arr)
 {
-    let arr_reverse = arr.toSorted();
-    arr_reverse.reverse();
-    return arr_reverse;
+    arr.sort((a, b)=>b-a);
+    return arr;
 }
 
+/**
+ * Удалает одинаковые значения в массиве
+ * @param {Array} arr Входной массив
+ * @returns Массив только с уникальными элементами
+ */
 export function unique(arr)
 {
     let unique_arr = new Set(arr);

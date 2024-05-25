@@ -4,7 +4,7 @@ num = prompt ("Введите число строк");
 
 for (let i=0; i <num; i++)
 {
-    if (dog > 0 || cat == 2)
+    if (dog > 0 && cat == 2)
     {
         difference = 6 - (dog + cat);
         console.log("dog\t".repeat(dog) + "cat\t".repeat(cat) + "dog\t".repeat(difference));
