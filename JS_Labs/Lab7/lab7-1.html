@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание 1</title>
+    </head>
+    <body>
+        <select>
+            <option value="Rock">Рок</option>
+            <option value="Blues" selected>Блюз</option>
+        </select>
+
+        <script>
+            "use strict"
+            function selected_music (elem)
+            {
+                let selected_music = elem.options[elem.selectedIndex];
+                console.log("Значение выбранной опции: ", selected_music.getAttribute("value"), "\nТекст выбранной опции: ", selected_music.textContent);
+            }
+            let music = document.querySelector("select");
+            selected_music(music);
+            
+            let new_elem = document.createElement("option");
+            new_elem.textContent = "Классика";
+            new_elem.setAttribute("value", "Classic");
+            new_elem.setAttribute("selected", true);
+            music.appendChild(new_elem);
+            selected_music(music);
+        </script>
+    </body>
+</html>

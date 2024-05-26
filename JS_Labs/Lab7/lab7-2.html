@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание 2</title>
+        <style>
+            ::placeholder
+            {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="input-placeholder">
+            <label for="placeholder"></label>
+            <input type="text" id="placeholder" required minlength="3" maxlength="10" data-placeholder="Nickname(3 to 10 characters)" size="25">
+        </div>
+        <script>
+            "use strict"
+            let label_el = document.getElementsByTagName("label")[0];
+            let input_el = document.getElementsByTagName("input")[0];
+            let placeholder = input_el.dataset.placeholder;
+            input_el.setAttribute("placeholder", placeholder);
+            label_el.textContent = placeholder;
+            label_el.style.display = "none";
+
+            input_el.onfocus = function ()
+            {
+                label_el.style.display = "block"
+                input_el.setAttribute("placeholder", "Nickname");
+            }
+
+            input_el.onblur = function ()
+            {
+                label_el.style.display = "none"
+                input_el.setAttribute("placeholder", placeholder);
+            }
+            console.log(placeholder);
+        </script>
+    </body>
+</html>

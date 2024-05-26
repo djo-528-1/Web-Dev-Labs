@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание 3</title>
+    </head>
+    <body>
+        <div id="change-div"></div>
+        <script>
+            "use strict"
+            let div_el = document.getElementById("change-div");
+            let textarea_el;
+            document.onkeydown = function (presskey)
+            {
+                if (presskey.ctrlKey && presskey.key === 'e')
+                {
+                    textarea_el = document.createElement("textarea");
+                    div_el.replaceWith(textarea_el);
+                    textarea_el.focus();
+                }
+                else if (presskey.ctrlKey && presskey.key === 's')
+                {
+                    div_el.textContent = textarea_el.value;
+                    textarea_el.replaceWith(div_el);
+                }
+                else if (presskey.key === "Escape")
+                {
+                    textarea_el.replaceWith(div_el);
+                }
+            }
+        </script>
+    </body>
+</html>
