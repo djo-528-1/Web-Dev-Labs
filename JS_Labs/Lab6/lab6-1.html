@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание 1</title>
+    </head>
+    <body>
+        <input type="button" id="hider" value="Спрятать текст">
+        <div id="text" bis_skin_checked="1">Текст</div>
+
+        <script>
+            "use strict"
+            let hider_button = document.getElementById("hider");
+            let text = document.getElementById("text");
+            hider_button.onclick = function ()
+            {
+                if (text.style.display == "none")
+                {
+                    text.style.display = "block";
+                    hider_button.value = "Спрятать текст";
+                }
+                else
+                {
+                    text.style.display = "none";
+                    hider_button.value = "Показать текст";
+                }
+            }
+        </script>
+    </body>
+</html>
