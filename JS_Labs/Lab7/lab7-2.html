@@ -22,17 +22,17 @@
             let placeholder = input_el.dataset.placeholder;
             input_el.setAttribute("placeholder", placeholder);
             label_el.textContent = placeholder;
-            label_el.style.display = "none";
+            label_el.style.visibility = "hidden";
 
             input_el.onfocus = function ()
             {
-                label_el.style.display = "block"
+                label_el.style.visibility = "visible";
                 input_el.setAttribute("placeholder", "Nickname");
             }
 
             input_el.onblur = function ()
             {
-                label_el.style.display = "none"
+                label_el.style.visibility = "hidden"
                 input_el.setAttribute("placeholder", placeholder);
             }
             console.log(placeholder);

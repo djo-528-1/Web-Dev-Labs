@@ -14,17 +14,20 @@
             {
                 if (presskey.ctrlKey && presskey.key === 'e')
                 {
+                    presskey.preventDefault();
                     textarea_el = document.createElement("textarea");
                     div_el.replaceWith(textarea_el);
                     textarea_el.focus();
                 }
                 else if (presskey.ctrlKey && presskey.key === 's')
                 {
+                    presskey.preventDefault();
                     div_el.textContent = textarea_el.value;
                     textarea_el.replaceWith(div_el);
                 }
                 else if (presskey.key === "Escape")
                 {
+                    presskey.preventDefault();
                     textarea_el.replaceWith(div_el);
                 }
             }
