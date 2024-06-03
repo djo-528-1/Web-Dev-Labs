@@ -108,8 +108,9 @@ export function fibs (number)
  */
 export function arrReverseSorted(arr)
 {
-    arr.sort((a, b)=>b-a);
-    return arr;
+    let arr_sorted = arr;
+    arr_sorted.sort((a, b)=>b-a);
+    return arr_sorted;
 }
 
 /**

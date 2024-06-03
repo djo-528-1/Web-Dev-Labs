@@ -16,6 +16,7 @@
                 {
                     presskey.preventDefault();
                     textarea_el = document.createElement("textarea");
+                    textarea_el.value = div_el.textContent;
                     div_el.replaceWith(textarea_el);
                     textarea_el.focus();
                 }
